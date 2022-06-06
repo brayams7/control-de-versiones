@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Italiana&family=Montserrat:wght@400;600;900&family=Roboto:wght@100;400;700&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    width: 100%;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 20px;
+}
+
+.title{
+    font-size: 18px;
+    text-align: center;
+}
+
+.bar-btn{
+    font-size: 25px;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    text-align: center;
+    transition: all .5s;
+}
+
+.nav-menu li{
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.nav-menu li a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav-menu li a.active, .nav-menu li a:hover{
+    color: black;
+    transition: .3s;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .nav-menu{
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu li{
+    display: block;
+}
+
+/*Styles of form*/
+
+.container{
+    padding-top: 45px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.card{
+    background-color: #8aa7ec;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.form{
+    margin-bottom: 15px;
+}
+.wrapper_form{
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper_form label{
+    display: block;
+    margin-bottom: 10px;
+}
+.wrapper_form input{
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+    width: 80%;
+    border: none;
+}
+
+.form .button{
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 0 5px;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    
+}
+
+.buttoms{
+    border-bottom: 15px;
+}
+
+.result{
+    font-weight: 900;
+}
+@media (min-width: 768px) {
+    .title{
+        font-size: 25px;
+    }
+
+    .container{
+        width: 70%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .wrapper_form input{
+        display: block;
+        padding: 8px;
+        border-radius: 5px;
+        width: 60%;
+    }
+    
+}
+

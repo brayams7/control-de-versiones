@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/styles/reset.css">
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <title>Control de versiones</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="/assets/images/software.png" alt="logo" class="logo">
+            </div>
+            <p class="title">
+                Esfuerzo de Halstead
+            </p>
+            <input type="checkbox" name="check" id="check">
+            <label for="check" class="bar-btn">
+                <img src="/assets/images/menu.png" width="25px" alt="">
+            </label>
+            <ul class="nav-menu">
+                <li><a href="/pages/index.html">Maduréz de software</a></li>
+                <li><a class="active" href="/pages/halstead.html">Esfuerzo de Halstead</a></li>
+                <li><a href="/pages/mcm.html">MCM</a></li>
+                <li><a href="/pages/conversionHTML.html">Conversión HTML</a></li>
+                <li><a href="/pages/buscarEliminar.html">Buscar y eliminar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <div class="card">
+            <form action="" id="form_halstead" class="form">
+
+                <div class="wrapper_form">
+                    <label>Ingrese la cantidad de operadores distintos (n1): </label>
+                    <input id="n1" type="number" name="n1" required>
+                </div>
+                
+                <div class="wrapper_form">
+                    <label>Ingrese la cantidad de operandos distintos (n2): </label>
+                    <input id="n2" type="number" name="n2" required>
+                </div>
+                
+                <div class="wrapper_form">
+                    <label>Ingrese la cantidad de veces que aparece el operador (N1): </label>
+                    <input id="N1" type="number" name="N1" required>
+                </div>
+                
+                <div class="wrapper_form">
+                    <label>Ingrese la cantidad de veces que aparece el operando (N2): </label>
+                    <input id="N2" type="number" name="N2" required>
+                </div>
+
+                <div class="buttoms">
+                    <button class="button" type="submit">Calcular</button>
+                    <button class="button" type="reset">Limpiar</button>
+                </div>
+            </form>
+            
+            <h2 id="result" class="result">El resultado es: </h2>
+        </div>
+    </section>
+
+
+    <script src="/assets/js/halstead.js"></script>
+</body>
+</html>
